@@ -44,14 +44,14 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-y-hidden">
       <motion.header
         className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <nav className="mx-auto px-4 py-4 flex justify-between items-center">
+        <nav className="w-full px-4 py-4 flex justify-between items-center">
           <motion.div
             className="flex items-center"
             whileHover={{ scale: 1.1 }}
