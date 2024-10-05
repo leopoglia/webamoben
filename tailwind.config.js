@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        saira: ['var(--font-saira-stencil)'],
+        
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "navy-blue": "#021246"
       },
     },
   },
