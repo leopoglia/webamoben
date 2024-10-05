@@ -51,7 +51,7 @@ export default function HomePage() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <nav className="container mx-auto py-4 flex justify-between items-center">
+        <nav className="mx-auto px-4 py-4 flex justify-between items-center">
           <motion.div
             className="flex items-center"
             whileHover={{ scale: 1.1 }}
