@@ -81,7 +81,7 @@ export default function HomePage() {
                   </motion.button>
                   <motion.button
                     onClick={() => scrollToSection(noticiasRef)}
-                    className="text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" 
+                    className="text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -116,7 +116,17 @@ export default function HomePage() {
             ">AMOBEN</h1>
 
             <p className="md:text-2xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">ASSOCIAÇÃO DE MORADORES DO BAIRRO ESTRADA NOVA</p>
+
+
+
           </motion.div>
+          <div className="absolute bottom-20 mt-6 w-full flex justify-center text-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 animate-up-down">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+
+          </div>
+
         </motion.div>
 
         <motion.div
