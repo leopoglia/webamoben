@@ -70,7 +70,7 @@ export default function HomePage() {
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-UVr9HU7a3IfkVY9RgGWA7Y3iRMsiaE.png" alt="AMOBEN Logo" width={40} height={40} className="mr-2" />
               </motion.div>
               <div className="flex items-center justify-center">
-                <div className='space-x-8 mr-8'>
+                <div className='space-x-4 lg:space-x-8 mr-4 lg:mr-8'>
                   <motion.button
                     onClick={() => scrollToSection(comunidadeRef)}
                     className="text-white hover:text-gray-100"
