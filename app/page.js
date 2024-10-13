@@ -92,7 +92,7 @@ export default function HomePage() {
 
                 <motion.button
                   onClick={() => scrollToSection(contatoRef)}
-                  className="bg-navy-blue text-white p-3 px-8 rounded"
+                  className="bg-navy-blue text-white p-2.5 px-6 rounded"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
