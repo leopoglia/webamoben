@@ -45,62 +45,67 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white overflow-y-hidden">
-      <motion.header
-        className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <nav className="w-full px-4 py-4 flex justify-between items-center">
-          <motion.div
-            className="flex items-center"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-UVr9HU7a3IfkVY9RgGWA7Y3iRMsiaE.png" alt="AMOBEN Logo" width={40} height={40} className="mr-2" />
-          </motion.div>
-          <div className="flex items-center justify-center">
-            <div className='space-x-8 mr-8'>
-              <motion.button
-                onClick={() => scrollToSection(comunidadeRef)}
-                className="text-gray-600 hover:text-gray-900"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                História
-              </motion.button>
-              <motion.button
-                onClick={() => scrollToSection(noticiasRef)}
-                className="text-gray-600 hover:text-gray-900"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                Notícias
-              </motion.button>
 
-            </div>
-
-            <motion.button
-              onClick={() => scrollToSection(contatoRef)}
-              className="bg-navy-blue text-white p-3 px-8 rounded"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contato
-            </motion.button>
-          </div>
-        </nav>
-      </motion.header>
-
-      <main className="pt-16">
+      <main>
         <motion.div
           ref={homeRef}
-          className="relative bg-cover bg-center h-[600px] flex items-center justify-center blue-filter"
+          className=" bg-cover bg-center h-[600px] flex items-center justify-center blue-filter"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute inset-0 w-full blur-sm " style={{ backgroundImage: "url('https://i.imgur.com/GbLAdGN.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+
+          <motion.header
+            className="fixed top-0 left-0 right-0 z-10 px-4"
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <nav className="w-full px-4 py-4 flex justify-between items-center">
+              <motion.div
+                className="flex items-center "
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-UVr9HU7a3IfkVY9RgGWA7Y3iRMsiaE.png" alt="AMOBEN Logo" width={40} height={40} className="mr-2" />
+              </motion.div>
+              <div className="flex items-center justify-center">
+                <div className='space-x-8 mr-8'>
+                  <motion.button
+                    onClick={() => scrollToSection(comunidadeRef)}
+                    className="text-white hover:text-gray-100"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    História
+                  </motion.button>
+                  <motion.button
+                    onClick={() => scrollToSection(noticiasRef)}
+                    className="text-white hover:text-gray-100"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    Notícias
+                  </motion.button>
+
+                </div>
+
+                <motion.button
+                  onClick={() => scrollToSection(contatoRef)}
+                  className="bg-navy-blue text-white p-3 px-8 rounded"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Contato
+                </motion.button>
+              </div>
+            </nav>
+          </motion.header>
+
+
+
+
+          <div className="absolute inset-0 w-full opacity-95 blur-sm " style={{ backgroundImage: "url('/images/background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <motion.div
             className="relative z-10 text-center text-white px-4"
             initial={{ y: 50, opacity: 0 }}
