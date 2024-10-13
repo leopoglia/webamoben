@@ -73,7 +73,7 @@ export default function HomePage() {
                 <div className='space-x-4 lg:space-x-8 mr-4 lg:mr-8'>
                   <motion.button
                     onClick={() => scrollToSection(comunidadeRef)}
-                    className="text-white hover:text-gray-100"
+                    className="text-white  [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -81,7 +81,7 @@ export default function HomePage() {
                   </motion.button>
                   <motion.button
                     onClick={() => scrollToSection(noticiasRef)}
-                    className="text-white hover:text-gray-100"
+                    className="text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" 
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -112,8 +112,10 @@ export default function HomePage() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-6xl md:text-8xl font-saira font-medium mb-2">AMOBEN</h1>
-            <p className="md:text-2xl">ASSOCIAÇÃO DE MORADORES DO BAIRRO ESTRADA NOVA</p>
+            <h1 className="text-6xl md:text-8xl font-saira font-medium mb-2 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]
+            ">AMOBEN</h1>
+
+            <p className="md:text-2xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">ASSOCIAÇÃO DE MORADORES DO BAIRRO ESTRADA NOVA</p>
           </motion.div>
         </motion.div>
 
