@@ -137,26 +137,65 @@ export default function HomePage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 px-4 mb-8">
-              <h2 className="text-2xl text-navy-blue font-bold mb-4">Nossa história</h2>
-              <p className="text-gray-600">
+          <div className="flex flex-wrap -mx-4 mt-5 mb-20">
 
-                A empresa Associacao De Moradores Do Bairro Estrada Nova - Amoben que tem como razão social Associacao De Moradores Do Bairro Estrada Nova - Amoben foi fundada em 05/02/2001 e está cadastrada na Solutudo no segmento de Ongs e Entidades Sociais com o CNPJ 04.287.930/0001-29. No mercado, a empresa está localizada na Rua 693 - Loteamento Blese, Nº S/N - Emef Marcos Verbinen no bairro Estrada Nova em Jaraguá do Sul - SC, CEP 89254-360. A empresa Associacao De Moradores Do Bairro Estrada Nova - Amoben está cadastrada na Receita Federal sob o CNAE 9430-8/00 com atividade fim de Atividades De Associações De Defesa De Direitos Sociais.
-              </p>
+
+            <div className="w-full md:w-1/2 px-4">
+              <h2 className="text-2xl text-navy-blue font-bold mb-4">Nossa história</h2>
+              <p className="text-gray-600 text-justify mb-10 md:mb-0">A <b className='text-navy-blue'>Associação de Moradores do Bairro Estrada Nova - AMOBEN</b>, criada em 5 de fevereiro de 2001, representa uma continuidade histórica do espírito comunitário e de desenvolvimento que sempre caracterizou o Bairro Estrada Nova, em Jaraguá do Sul, Santa Catarina.
+
+                <br />
+                <br />
+
+                O surgimento da <b className='text-navy-blue'>AMOBEN</b> reflete o desejo da comunidade de se organizar formalmente para lutar por melhores condições de vida e garantir que as demandas locais sejam ouvidas. Com sede na Rua José Picolli, número 532, a associação atua em diversas frentes, como a defesa de direitos sociais e a promoção de atividades culturais e esportivas. A associação não apenas busca promover o bem-estar social, mas também reforçar a identidade coletiva do bairro por meio de eventos que integram e valorizam os moradores.
+                <br />
+                <br />
+
+                Historicamente, o bairro Estrada Nova cresceu com a chegada de famílias colonizadoras no início do século XX, que deram início à formação das primeiras comunidades. Nomes como Verbinenn, Nicoluzzi e Bertoldi são alguns dos pioneiros que ajudaram a transformar a região, inicialmente rural, em um dos bairros mais movimentados e desenvolvidos de Jaraguá do Sul. A inclusão do bairro no perímetro urbano nos anos 1980 acelerou ainda mais seu crescimento, trazendo novas infraestruturas como escolas e centros de saúde, e estabelecendo o Estrada Nova como uma área de grande importância dentro do município.
+                <br />
+                <br />
+
+                A <b className='text-navy-blue'>AMOBEN</b>, com sua atuação ao longo de mais de duas décadas, mantém viva essa trajetória de progresso e preservação da memória local. A associação continua sendo um símbolo do compromisso dos moradores em melhorar a qualidade de vida da comunidade, respeitando suas raízes históricas e ao mesmo tempo projetando um futuro de desenvolvimento e integração social para o bairro Estrada Nova.</p>
             </div>
-            <div className="w-full md:w-1/2 px-4 mb-8 flex justify-center items-center">
+
+            <div className="w-full md:w-1/2 px-4 mb-8 flex justify-center items-start">
               <motion.img
-                src="/placeholder.svg"
+                src="https://scontent.fbnu8-1.fna.fbcdn.net/v/t39.30808-6/307570581_389972280012983_7346020924009440225_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=z4B5ptS0ME8Q7kNvgGC14K5&_nc_zt=23&_nc_ht=scontent.fbnu8-1.fna&_nc_gid=AhCzOi2_Unf8LVxCy16kwOw&oh=00_AYBVfU1L7d72LDiq5BQKmjI7gNLYcn1xyRgEHM_g5GIS6A&oe=6720BE0D"
                 alt="Community"
-                width={400}
-                height={400}
-                className="rounded-full"
-                whileHover={{ scale: 1.1, rotate: 5 }}
+                width={350}
+                height={350}
+                className="rounded"
+                whileHover={{ scale: 1.05, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               />
             </div>
+
           </div>
+
+          <div className="flex flex-wrap flex-col-reverse md:flex-row -mx-4">
+
+            <div className="w-full md:w-1/2 px-4 flex justify-center items-center">
+              <motion.img
+                src="https://ocp.news/wp-content/uploads/2018/08/bairro-Estrada-Nova-em-9.jpg"
+                alt="Community"
+                width={500}
+                height={500}
+                className="rounded-lg"
+                whileHover={{ scale: 1.05, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+              />
+            </div>
+            <div className="w-full md:w-1/2 px-4">
+              <h2 className="text-2xl text-navy-blue font-bold mb-4">Bairro Estrada Nova</h2>
+              <p className="text-gray-600 text-justify mb-10 md:mb-0">
+
+                O bairro Estrada Nova, cuja origem remonta ao início do século XX, foi fundamental na expansão e colonização da região, servindo como uma importante rota de ligação entre a Colônia Jaraguá e Corupá, anteriormente conhecida como Hansa Humboldt. A estrada que deu nome ao bairro foi aberta em 1920 e, embora tenha perdido sua função inicial com a construção da BR-280, o nome "Estrada Nova" ficou marcado na história e no imaginário da população.
+                Inicialmente rural, a região só foi urbanizada na década de 1980, quando novos loteamentos começaram a atrair moradores e atividades econômicas
+              </p>
+            </div>
+
+          </div>
+
         </motion.div>
 
         <motion.div
