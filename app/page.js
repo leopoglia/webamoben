@@ -43,6 +43,18 @@ export default function HomePage() {
     setCurrentNewsIndex((prevIndex) => (prevIndex - 1 + newsItems.length) % newsItems.length)
   }
 
+
+  const pages =
+    [{
+      "image": "/images/news.png", description: "Fique por dentro das novidades da comunidade!"
+    }, {
+      "image": "/images/calendar.png", description: "Acompanhe os eventos e atividades locais!"
+    }, {
+      "image": "/images/polls.png", description: "Participe de enquetes e pesquisas!"
+
+    }];
+
+
   return (
     <div className="min-h-screen bg-white overflow-y-hidden">
 
@@ -208,25 +220,28 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold mb-8 text-center text-navy-blue">Em breve teremos nosso App</h2>
             <div className="flex flex-wrap -mx-4 justify-center">
-              {[1, 2, 3].map((i) => (
+              {pages.map((page, index) => (
                 <motion.div
-                  key={i}
+                  key={index}
                   className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   viewport={{ once: true }}
                 >
                   <div className="bg-white rounded-lg shadow-md p-6">
-                    <motion.img
-                      src="https://i.imgur.com/Xpif07v.png"
-                      alt="App Icon"
-                      width={250}
-                      className="mx-auto mb-4"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      whileTap={{ scale: 0.9 }}
-                    />
-                    <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <div className='flex justify-center items-start h-80'>
+                      <motion.img
+                        src={page.image}
+                        alt="App Icon"
+                        width={250}
+                        className="mx-auto mb-4"
+                        whileHover={{ scale: 1.1, rotate: 5 }}
+                        whileTap={{ scale: 0.9 }}
+                      />
+                    </div>
+                    <p className="text-gray-600 text-lg text-center">{page.description}</p>
                   </div>
                 </motion.div>
               ))}
