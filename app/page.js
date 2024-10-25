@@ -200,8 +200,7 @@ export default function HomePage() {
             <div className="w-full md:w-1/2 px-4">
               <h2 className="text-2xl text-navy-blue font-bold mb-4">Bairro Estrada Nova</h2>
               <p className="text-gray-600 text-justify mb-10 md:mb-0">
-
-                O bairro Estrada Nova, cuja origem remonta ao início do século XX, foi fundamental na expansão e colonização da região, servindo como uma importante rota de ligação entre a Colônia Jaraguá e Corupá, anteriormente conhecida como Hansa Humboldt. A estrada que deu nome ao bairro foi aberta em 1920 e, embora tenha perdido sua função inicial com a construção da BR-280, o nome "Estrada Nova" ficou marcado na história e no imaginário da população.
+                O bairro Estrada Nova, cuja origem remonta ao início do século XX, foi fundamental na expansão e colonização da região, servindo como uma importante rota de ligação entre a Colônia Jaraguá e Corupá, anteriormente conhecida como Hansa Humboldt. A estrada que deu nome ao bairro foi aberta em 1920 e, embora tenha perdido sua função inicial com a construção da BR-280, o nome Estrada Nova ficou marcado na história e no imaginário da população.
                 Inicialmente rural, a região só foi urbanizada na década de 1980, quando novos loteamentos começaram a atrair moradores e atividades econômicas
               </p>
             </div>
