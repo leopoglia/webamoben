@@ -46,7 +46,7 @@ export default function HomePage() {
 
   const pages =
     [{
-      "image": "/images/news.png", description: "Fique por dentro das novidades da comunidade!"
+      "image": "/images/news.png", description: "Fique por dentro das novidades!"
     }, {
       "image": "/images/calendar.png", description: "Acompanhe os eventos e atividades locais!"
     }, {
