@@ -8,19 +8,19 @@ import { motion } from 'framer-motion'
 const newsItems = [
   {
     id: 1,
-    title: "Novo projeto comunitário lançado",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title: "Três ruas no bairro Estrada Nova recebem pavimentação asfáltica (10/2024)",
+    content: "Seguem as pavimentações asfálticas em Jaraguá do Sul. A Rua Eugênio Picolli, no bairro Estrada Nova, já foi asfaltada. A via possui 170 metros de extensão, onde foram investidos R$ 446.043,50 em melhorias. Além dessa rua, o contrato contempla outras duas vias do bairro com serviços de engenharia, fornecimento de materiais e mão de obra para pavimentação asfáltica, serviços preliminares, terraplanagem, drenagem pluvial, obras complementares e sinalização viária."
   },
   {
     id: 2,
-    title: "Reunião mensal da associação",
-    content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    title: "Revitalização do viaduto do Estrada Nova é solicitada em sessão (12/2023)",
+    content: "Em sessão realizada na Câmara Municipal de Jaraguá do Sul, os vereadores deliberaram e aprovaram uma indicação apresentada por Jonathan Reinke (Podemos). A proposta insta o Executivo a tomar medidas necessárias para realizar uma revitalização no viaduto que serve como acesso aos bairros Estrada Nova e Rau."
   },
   {
     id: 3,
-    title: "Melhorias na infraestrutura local",
-    content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-  }
+    title: "Vereador pede construção de escola e vagas em CMEI no Estrada Nova (03/2021)",
+    content: "Os vereadores de Jaraguá do Sul aprovaram, na sessão, três indicações do vereador Anderson Kassner (PP). Duas das demandas são por vagas em escolas e creches no bairro Estrada Nova. A primeira indicação pede ao Executivo a construção de uma nova escola municipal no Estrada Nova. Outra solicita a ampliação de vagas no Centro Municipal de Educação Infantil do bairro. Ainda há outra indicação que pede a construção de um muro de contensão nos fundos desse Cmei."
+  },
 ]
 
 export default function HomePage() {
