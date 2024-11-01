@@ -172,7 +172,7 @@ export default function HomePage() {
 
             <div className="w-full md:w-1/2 px-4 mb-8 flex justify-center items-start">
               <motion.img
-                src="https://scontent.fbnu8-1.fna.fbcdn.net/v/t39.30808-6/307570581_389972280012983_7346020924009440225_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=z4B5ptS0ME8Q7kNvgGC14K5&_nc_zt=23&_nc_ht=scontent.fbnu8-1.fna&_nc_gid=AhCzOi2_Unf8LVxCy16kwOw&oh=00_AYBVfU1L7d72LDiq5BQKmjI7gNLYcn1xyRgEHM_g5GIS6A&oe=6720BE0D"
+                src="/images/icone.jpg"
                 alt="Community"
                 width={350}
                 height={350}
@@ -188,7 +188,7 @@ export default function HomePage() {
 
             <div className="w-full md:w-1/2 px-4 flex justify-center items-center">
               <motion.img
-                src="https://ocp.news/wp-content/uploads/2018/08/bairro-Estrada-Nova-em-9.jpg"
+                src="/images/bairro.jpg"
                 alt="Community"
                 width={500}
                 height={500}
